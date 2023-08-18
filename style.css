@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition-duration: 300ms;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 10vh;
+    background: #274791;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1em;
+    width: 40vh;
+    max-width: 50em;
+}
+
+h1, h2{
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    color: hsl(100, 100%, 80%);
+    text-shadow: 0 0 0.5em rgb(0, 0, 0);
+    text-align: center;
+    user-select: none;
+    margin: 2em 0;
+}
+
+form>input,
+form label, 
+form label input{
+    width: 100%;
+    background: transparent;
+    outline: none;
+    color: white;
+    padding: 6px 4px;
+    border: none;
+}
+
+form button{
+    width: 100%;
+    background-color: rgb(94, 209, 209);
+    color: black;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin: 0.5em auto;
+}
+
+form>button:hover{
+    background: transparent;
+    color: rgb(94, 209, 209);
+}
+form label{
+    border: 3px solid transparent;
+    border-bottom: 1px solid aqua;
+    margin: 0.25em 0 0.75em 0;
+    font-size: 1.2em;
+    padding: 0.85em 0.75em;
+}
+
+form>input{
+    position: relative;
+    padding-left: 1.25em;
+    flex: 1;
+    color: white;
+    border-bottom: 1px solid transparent;
+    padding: 0.4em 0.2em;
+}
+
+form input:hover:hover{
+    border-bottom: 1px solid greenyellow;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
