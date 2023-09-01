@@ -1,89 +1,49 @@
-*{
-    box-sizing: border-box;
+body{
     margin: 0;
     padding: 0;
-    transition-duration: 300ms;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 10vh;
-    background: #274791;
-    color: white;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.1em;
-    width: 40vh;
-    max-width: 50em;
-}
-
-h1, h2{
-    font-weight: 800;
-    letter-spacing: 0.05em;
-    color: hsl(100, 100%, 80%);
-    text-shadow: 0 0 0.5em rgb(0, 0, 0);
     text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("./images.jpg");
+}
+h1{
+    color: #8a2be2;
     user-select: none;
-    margin: 2em 0;
 }
-
-form>input,
-form label, 
-form label input{
-    width: 100%;
-    background: transparent;
-    outline: none;
-    color: white;
-    padding: 6px 4px;
-    border: none;
+form{
+    margin-left: 18em;
+    margin-right: 18em;
+    padding: 2em;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-
-form button{
-    width: 100%;
-    background-color: rgb(94, 209, 209);
-    color: black;
-    border: none;
+form > input{
+    padding: 0.4em;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+}
+form > input:hover{
+    border: 2px solid blueviolet;
+    padding: 0.6em;
+}
+form > button {
     padding: 0.5em;
+    width: 8em;
+    border: 1px solid chartreuse;
+    color: chartreuse;
+    font-size: 1em;
+}
+form > button:hover{
+    padding: 1em;
+    border: 3px solid chartreuse;
     cursor: pointer;
-    font-weight: 600;
-    font-size: 1.2em;
-    margin: 0.5em auto;
 }
-
-form>button:hover{
-    background: transparent;
-    color: rgb(94, 209, 209);
-}
-form label{
-    border: 3px solid transparent;
-    border-bottom: 1px solid aqua;
-    margin: 0.25em 0 0.75em 0;
-    font-size: 1.2em;
-    padding: 0.85em 0.75em;
-}
-
-form>input{
-    position: relative;
-    padding-left: 1.25em;
-    flex: 1;
-    color: white;
-    border-bottom: 1px solid transparent;
-    padding: 0.4em 0.2em;
-}
-
-form input:hover:hover{
-    border-bottom: 1px solid greenyellow;
-}
-
-a{
+form > a {
     text-decoration: none;
-    color: white;
+    color: #d94343;
+    font-size: 1.1em;
+}
+@media only screen and (max-width: 450px)
+{
+    form{
+        margin: 2em;
+    }
 }
